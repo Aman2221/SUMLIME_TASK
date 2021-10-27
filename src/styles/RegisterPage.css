@@ -1,0 +1,120 @@
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.registerPageDiv {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: max-content;
+
+  margin-top: 100px;
+}
+.registerPageDiv > form {
+  padding: 20px;
+}
+.userDetailsDiv {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.userInputs {
+  margin-top: 40px !important;
+  width: 90%;
+}
+.SubmitSignupBtn {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.registerHeading {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "", sans-serif;
+  text-align: center;
+  color: #03a9f4;
+  font-weight: 400;
+  border-bottom: 1px solid #03a9f4;
+  margin-top: 5px;
+}
+.userFormRightDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.userImgDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userImgDiv > img {
+  border-radius: 50%;
+  height: 170px;
+}
+.userImgDiv > input {
+  display: none;
+}
+.userImgDiv > label {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  margin-top: 20px;
+}
+#allFieldRequireMessage {
+  color: red;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#textAlertNormal {
+  color: lime;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+.dummyCreditsDiv {
+  color: grey;
+  font-family: "lato";
+
+  width: 90%;
+}
+.dummyCreditsDiv > p {
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.dummyCreditsDiv > p > span {
+  color: #03a9f4;
+}
+
+@media screen and (max-width: 768px) {
+  .registerPage {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    height: max-content;
+  }
+  .registerPageDiv {
+    width: 100%;
+    height: max-content;
+    margin-top: 60px;
+  }
+  .userImgDiv {
+    margin-right: 20px;
+    width: 100%;
+  }
+}
